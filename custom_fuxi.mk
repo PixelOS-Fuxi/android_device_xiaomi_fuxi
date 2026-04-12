@@ -33,3 +33,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildFingerprint=Xiaomi/fuxi_global/fuxi:16/BP2A.250605.031.A3/OS3.0.303.0.WMCMIXM:user/release-keys \
     DeviceName=fuxi \
     DeviceProduct=fuxi_global
+
+# Include keys for signing the build
+-include vendor/lineage-priv/keys/keys.mk

@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.lineageos.settingsoverlay.fuxi">
+    package="com.miui.settingsoverlay.fuxi">
     <application android:hasCode="false" />
     <overlay android:isStatic="true"
              android:priority="1"

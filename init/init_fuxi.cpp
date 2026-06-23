@@ -25,6 +25,10 @@ void property_override(const char* prop, const char* value) {
 }
 
 void vendor_load_properties() {
+    // Skip in recovery, charger, fastbootd, etc.
+    if (access("/system/bin/recovery", F_OK) == 0 ||
+        GetProperty("ro.bootmode", "") == "charger")
+        return;
     // Stock ROM property spoofing - sourced from OS3.0.303.0.WMCMIXM
     property_override("keyguard.no_require_sim", "true");
     property_override("ro.boot.hwdevice", "mivendor");

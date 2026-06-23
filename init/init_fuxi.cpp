@@ -30,7 +30,7 @@ void vendor_load_properties() {
         GetProperty("ro.bootmode", "") == "charger")
         return;
     // Stock ROM property spoofing - sourced from OS3.0.303.0.WMCMIXM
-    property_override("keyguard.no_require_sim", "true");
+    property_override("keyguard.no_require_sim", "true"); // Camera Fix?
     property_override("ro.boot.hwdevice", "mivendor");
     property_override("ro.boot.hwname", "mivendor");
     property_override("ro.boot.product.hardware.sku", "mivendor");
@@ -47,20 +47,20 @@ void vendor_load_properties() {
     property_override("ro.build.date", "Mon May 18 12:59:14 CST 2026");
     property_override("ro.build.date.utc", "1779080354");
     property_override("ro.build.description", "missi-user 16 BP2A.250605.031.A3 OS3.0.303.0.WMCMIXM release-keys");
-    property_override("ro.build.display.id", "BP2A.250605.031.A3");
-    property_override("ro.build.fingerprint", "Xiaomi/missi/missi:16/BP2A.250605.031.A3/OS3.0.303.0.WMCMIXM:user/release-keys");
-    property_override("ro.build.flavor", "missi-user");
+    property_override("ro.build.display.id", "BP2A.250605.031.A3"); // Possible Detection Point
+    property_override("ro.build.fingerprint", "Xiaomi/fuxi_global/fuxi:16/BP2A.250605.031.A3/OS3.0.303.0.WMCMIXM:user/release-keys");
+    property_override("ro.build.flavor", "missi-user"); // Possible Detection Point
     property_override("ro.build.host", "pangu-build-component-system-600797-69z8c-kwjbd-cz835");
-    property_override("ro.build.id", "BP2A.250605.031.A3");
+    property_override("ro.build.id", "BP2A.250605.031.A3"); // Possible Detection Point
     property_override("ro.build.product", "missi");
     property_override("ro.build.tags", "release-keys");
     property_override("ro.build.type", "user");
     property_override("ro.build.user", "builder");
-    property_override("ro.build.version.incremental", "OS3.0.303.0.WMCMIXM");
+    property_override("ro.build.version.incremental", "OS3.0.303.0.WMCMIXM"); // Possible Detection Point
     property_override("ro.build.version.release", "16");
     property_override("ro.build.version.release_or_codename", "16");
-    property_override("ro.build.version.sdk", "36");
-    property_override("ro.build.version.security_patch", "2026-05-01");
+    property_override("ro.build.version.sdk", "36"); // Possible Detection Point
+    // property_override("ro.build.version.security_patch", "2026-05-01");
     property_override("ro.hardware.keystore_desede", "true");
     property_override("ro.incremental.enable", "yes");
     property_override("ro.odm_dlkm.build.date", "Mon May 18 05:45:19 UTC 2026");
@@ -78,10 +78,10 @@ void vendor_load_properties() {
     property_override("ro.product.bootimage.manufacturer", "Xiaomi");
     property_override("ro.product.bootimage.model", "2211133G");
     property_override("ro.product.bootimage.name", "fuxi_global");
-    property_override("ro.product.brand", "Xiaomi");
+    // property_override("ro.product.brand", "Xiaomi");
     property_override("ro.product.device", "mivendor");
     property_override("ro.product.hardware.sku", "mivendor");
-    property_override("ro.product.manufacturer", "Xiaomi");
+    // property_override("ro.product.manufacturer", "Xiaomi");
     property_override("ro.product.model", "xiaomi for arm64");
     property_override("ro.product.name", "mivendor_sm8550_global");
     property_override("ro.product.odm_dlkm.brand", "Xiaomi");
@@ -150,7 +150,7 @@ void vendor_load_properties() {
     property_override("ro.vendor.build.date.utc", "1779083119");
     property_override("ro.vendor.build.fingerprint", "Xiaomi/mivendor_sm8550_global/mivendor:13/TKQ1.221114.001/OS3.0.303.0.WMCMIXM:user/release-keys");
     property_override("ro.vendor.build.id", "TKQ1.221114.001");
-    property_override("ro.vendor.build.security_patch", "2026-02-01");
+    // property_override("ro.vendor.build.security_patch", "2026-02-01");
     property_override("ro.vendor.build.tags", "release-keys");
     property_override("ro.vendor.build.type", "user");
     property_override("ro.vendor.build.version.incremental", "OS3.0.303.0.WMCMIXM");

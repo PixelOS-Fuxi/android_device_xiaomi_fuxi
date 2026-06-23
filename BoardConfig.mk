@@ -24,6 +24,9 @@ BOARD_VENDOR_KERNEL_MODULES_LOAD += \
 # OTA
 TARGET_OTA_ASSERT_DEVICE := fuxi
 
+# Init Spoof Environment
+$(call soong_config_set,libinit,vendor_init_lib,//device/xiaomi/fuxi/init:libinit_fuxi)
+
 # Properties
 TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
